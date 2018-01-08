@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	cout << fixed;
+	cout.precision(2);
+	int IV, FV, ET;
+	cout << "Please enter the initial velocity in M/S: ";
+	cin >> IV;
+	cout << "Please enter the end velocity in M/S: ";
+	cin >> FV;
+	cout << "Please enter the time elapsed in M/S: ";
+	cin >> ET;
+	float AA;
+	AA = (FV - IV) / ET;
+	cout << "Average Acceleration: " << AA << endl;
+
+
+	return 0;
+
+}
+
+/*Write a C++ console program that calculates the average acceleration of two velocities. Average acceleration is defined as the change in velocity divided by elapsed time.
+
+ave_acceleration = (velocity_final - velocity_initial) / elapsedTime
+
+Your program should prompt the user to input the initial velocity, the final velocity, and the elapsed time. Store these values into variables of the appropriate datatype. 
+It should then compute the average acceleration and display the results in a pleasing format.
+
+The units for velocity are meters / second (m/s). The unit for time is seconds (s). The units for acceleration are m/s/s. 
+You can ignore units in your C++ code, but it is good to include them in your output statements so the user knows what the program is doing.*/
